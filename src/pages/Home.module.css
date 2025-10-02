@@ -1,0 +1,106 @@
+/*
+   .\src\pages\Home.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.hero {
+  border-radius: 2.5rem;
+  @apply relative mb-20 overflow-hidden border border-lotr-gold/30 bg-lotr-hero bg-cover bg-center px-8 py-24 text-center text-lotr-cream shadow-2xl shadow-black/60 md:px-24;
+}
+
+.hero::after {
+  content: "";
+  @apply absolute inset-0 bg-gradient-to-br from-lotr-ink/85 via-lotr-ink/70 to-transparent;
+}
+
+.heroContent {
+  @apply relative z-10 flex flex-col items-center gap-6;
+}
+
+.heroTitle {
+  letter-spacing: 0.6em;
+  @apply font-cinzel text-3xl uppercase text-lotr-gold md:text-5xl;
+}
+
+.heroText {
+  letter-spacing: 0.25em;
+  @apply max-w-2xl text-sm uppercase text-lotr-cream/80 md:text-base;
+}
+
+.actions {
+  @apply flex flex-col items-center gap-4 md:flex-row;
+}
+
+.legendSection {
+  @apply mb-20 grid gap-8 md:grid-cols-3;
+}
+
+.legendCard {
+  border-radius: 1.75rem;
+  @apply border border-lotr-gold/20 bg-lotr-ink/80 p-8 text-center shadow-xl shadow-black/40 transition-transform duration-200 hover:-translate-y-1;
+}
+
+.legendIcon {
+  @apply mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full border border-lotr-gold/60 bg-lotr-gold/15 text-lotr-gold;
+}
+
+.legendTitle {
+  letter-spacing: 0.3em;
+  @apply font-cinzel text-lg uppercase text-lotr-gold;
+}
+
+.legendText {
+  letter-spacing: 0.2em;
+  @apply mt-3 text-xs uppercase text-lotr-cream/70;
+}
+
+.gallery {
+  border-radius: 2.5rem;
+  @apply mb-20 border border-lotr-gold/30 bg-lotr-map bg-cover bg-center p-4 shadow-2xl shadow-black/50;
+}
+
+.galleryInner {
+  border-radius: 2rem;
+  @apply border border-lotr-gold/30 bg-lotr-ink/85 p-8 backdrop-blur;
+}
+
+.galleryGrid {
+  @apply grid gap-6 md:grid-cols-3;
+}
+
+.galleryCard {
+  border-radius: 1.75rem;
+  @apply flex h-full flex-col overflow-hidden border border-lotr-gold/30 bg-lotr-ink/85 shadow-lg shadow-black/40;
+}
+
+.galleryImage {
+  @apply h-48 w-full object-cover;
+}
+
+.galleryBody {
+  @apply flex flex-1 flex-col gap-3 p-6 text-sm text-lotr-cream;
+}
+
+.cta {
+  border-radius: 2.5rem;
+  @apply mb-24 flex flex-col items-center gap-6 border border-lotr-gold/30 bg-gradient-to-br from-lotr-forest/70 via-lotr-ink/80 to-lotr-ink/90 px-8 py-16 text-center shadow-2xl shadow-black/50 md:px-24;
+}
+
+.ctaTitle {
+  letter-spacing: 0.5em;
+  @apply font-cinzel text-2xl uppercase text-lotr-gold;
+}
+
+.ctaText {
+  letter-spacing: 0.25em;
+  @apply max-w-2xl text-xs uppercase text-lotr-cream/80;
+}
+
+.page {
+  @apply space-y-20;
+}
+
+@media (max-width: 768px) {
+  .galleryInner {
+    @apply p-6;
+  }
+}

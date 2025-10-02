@@ -1,0 +1,33 @@
+/*
+   .\src\components\Cart\CartItem.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.item {
+  @apply flex flex-col gap-4 border-b border-lotr-gold/20 pb-4 text-sm text-lotr-cream md:flex-row md:items-center md:justify-between;
+}
+
+.summary {
+  @apply flex flex-col gap-2;
+}
+
+.price {
+  @apply font-semibold text-lotr-gold;
+}
+
+.amount {
+  @apply ml-2 inline-flex items-center rounded-full border border-lotr-gold/30 px-3 py-1 text-xs font-semibold;
+}
+
+.actions {
+  @apply flex items-center gap-3;
+}
+
+.actions button {
+  @apply flex h-8 w-8 items-center justify-center rounded-full border border-lotr-gold/40 text-lg text-lotr-gold transition-colors duration-150 hover:bg-lotr-gold/15;
+}
+
+@media (max-width: 600px) {
+  .actions {
+    @apply justify-end;
+  }
+}

@@ -1,0 +1,27 @@
+/*
+   .\src\components\Cart\Cart.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.cart {
+  @apply flex flex-col gap-6;
+}
+
+.cart-items {
+  @apply max-h-80 space-y-4 overflow-y-auto pr-2;
+}
+
+.total {
+  @apply flex items-center justify-between text-lg font-semibold text-lotr-gold;
+}
+
+.actions {
+  @apply flex flex-col-reverse gap-3 md:flex-row md:justify-end;
+}
+
+.feedback {
+  @apply text-center text-sm leading-relaxed text-lotr-cream;
+}
+
+.error {
+  @apply text-red-200;
+}

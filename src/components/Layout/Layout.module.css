@@ -1,0 +1,13 @@
+/*
+   .\src\components\Layout\Layout.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.main {
+  @apply mx-auto w-full max-w-6xl px-6 pb-24 pt-16 md:px-0;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    @apply px-6;
+  }
+}

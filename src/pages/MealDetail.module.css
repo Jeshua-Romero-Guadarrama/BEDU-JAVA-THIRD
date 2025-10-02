@@ -1,0 +1,30 @@
+/*
+   .\src\pages\MealDetail.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.wrapper {
+  @apply grid gap-8 py-10 text-lotr-cream;
+}
+
+.header {
+  @apply flex flex-col gap-4;
+}
+
+.tags {
+  letter-spacing: 0.25em;
+  @apply flex flex-wrap items-center gap-3 text-xs uppercase text-lotr-gold;
+}
+
+.summary {
+  letter-spacing: 0.2em;
+  @apply text-xs uppercase text-lotr-cream/75;
+}
+
+.cta {
+  @apply mt-8 flex flex-col gap-4 md:flex-row md:items-center;
+}
+
+.feedback {
+  letter-spacing: 0.2em;
+  @apply text-center text-xs uppercase text-lotr-cream/70;
+}

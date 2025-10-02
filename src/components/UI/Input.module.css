@@ -1,0 +1,40 @@
+/*
+   .\src\components\UI\Input.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.input {
+  @apply flex flex-col gap-2 text-sm text-lotr-cream;
+}
+
+.input label {
+  letter-spacing: 0.2em;
+  @apply font-semibold uppercase text-xs text-lotr-gold;
+}
+
+.input input {
+  @apply rounded-lg border border-lotr-gold/40 bg-lotr-ink/70 px-3 py-2 text-lotr-cream transition-colors duration-150 ease-out;
+}
+
+.input input:focus {
+  box-shadow: 0 0 0 4px rgba(214, 172, 90, 0.15);
+  @apply outline-none border-lotr-gold bg-lotr-ink/90;
+}
+
+.invalid input {
+  @apply border-red-400 bg-red-900/20;
+}
+
+.invalid label {
+  @apply text-red-200;
+}
+
+.invalid-message {
+  @apply text-xs text-red-200;
+}
+
+@media (max-width: 600px) {
+  .input {
+    @apply gap-1;
+  }
+}
+

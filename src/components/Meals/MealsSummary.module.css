@@ -1,0 +1,17 @@
+/*
+   .\src\components\Meals\MealsSummary.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.summary {
+  @apply mx-auto mb-12 flex max-w-3xl flex-col items-center gap-4 text-center text-lotr-cream;
+}
+
+.summary h2 {
+  letter-spacing: 0.4em;
+  @apply font-cinzel text-2xl uppercase text-lotr-gold md:text-3xl;
+}
+
+.summary p {
+  letter-spacing: 0.2em;
+  @apply text-xs uppercase text-lotr-cream/70 md:text-sm;
+}

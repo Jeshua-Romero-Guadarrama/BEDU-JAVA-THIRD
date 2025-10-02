@@ -1,0 +1,56 @@
+/*
+   .\src\pages\Checkout.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.wrapper {
+  @apply grid gap-10;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1.1fr 1fr;
+  }
+}
+
+.summary {
+  border-radius: 2rem;
+  @apply border border-lotr-gold/25 bg-lotr-ink/85 p-8 shadow-2xl shadow-black/40 text-lotr-cream;
+}
+
+.summary ul {
+  @apply space-y-6;
+}
+
+.summary h2 {
+  letter-spacing: 0.35em;
+  @apply font-cinzel text-xl uppercase text-lotr-gold;
+}
+
+.total {
+  @apply mt-6 flex items-center justify-between text-lg font-semibold text-lotr-gold;
+}
+
+.formCard {
+  border-radius: 2rem;
+  @apply border border-lotr-gold/25 bg-lotr-ink/85 p-8 shadow-2xl shadow-black/40 text-lotr-cream;
+}
+
+.feedback {
+  letter-spacing: 0.2em;
+  @apply text-center text-xs uppercase text-lotr-cream/70;
+}
+
+.error {
+  @apply text-red-200;
+}
+
+.actions {
+  @apply mt-6 flex flex-col-reverse gap-4 md:flex-row md:justify-center;
+}
+
+@media (max-width: 768px) {
+  .summary,
+  .formCard {
+    @apply p-6;
+  }
+}

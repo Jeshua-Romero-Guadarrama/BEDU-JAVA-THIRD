@@ -1,0 +1,132 @@
+/*
+   .\src\pages\CharacterProfiles.module.css
+   Autor: Jeshua Romero Guadarrama (expansion de fichas)
+*/
+.page {
+  @apply space-y-12;
+}
+
+.hero {
+  position: relative;
+  border-radius: 2.5rem;
+  @apply overflow-hidden border border-lotr-gold/30 bg-lotr-map bg-cover bg-center px-10 py-16 text-center text-lotr-cream shadow-2xl shadow-black/50 md:px-20;
+}
+
+.hero::before {
+  content: "";
+  @apply absolute inset-0 bg-lotr-ink/80 backdrop-blur;
+}
+
+.heroContent {
+  @apply relative z-10 flex flex-col items-center gap-4;
+}
+
+.heroTitle {
+  letter-spacing: 0.45em;
+  @apply font-cinzel text-xl uppercase text-lotr-gold md:text-2xl;
+}
+
+.heroText {
+  letter-spacing: 0.25em;
+  @apply max-w-2xl text-xs uppercase text-lotr-cream/75;
+}
+
+.section {
+  @apply space-y-8;
+}
+
+.sectionHeader {
+  @apply space-y-3 text-center;
+}
+
+.sectionTitle {
+  letter-spacing: 0.4em;
+  @apply font-cinzel text-lg uppercase text-lotr-gold;
+}
+
+.sectionSubtitle {
+  letter-spacing: 0.25em;
+  @apply mx-auto max-w-3xl text-[11px] uppercase text-lotr-cream/70;
+}
+
+.grid {
+  display: grid;
+  @apply gap-8 md:grid-cols-2 xl:grid-cols-3;
+}
+
+.card {
+  @apply flex h-full flex-col overflow-hidden rounded-3xl border border-lotr-gold/25 bg-lotr-ink/85 shadow-xl shadow-black/50 transition-all duration-200;
+}
+
+.cardActive {
+  @apply border-lotr-gold/60 shadow-2xl shadow-black/70;
+  transform: translateY(-8px);
+}
+
+.imageWrapper {
+  background-color: rgba(14, 12, 9, 0.85);
+  position: relative;
+  @apply overflow-hidden;
+}
+
+.cardImage {
+  display: block;
+  @apply h-44 w-full object-cover transition-transform duration-300;
+}
+
+.cardActive .cardImage {
+  display: block;
+  transform: scale(1.05);
+}
+
+.badge {
+  letter-spacing: 0.3em;
+  @apply absolute left-4 top-4 rounded-full border border-lotr-gold/40 bg-lotr-ink/80 px-4 py-1 text-[10px] uppercase text-lotr-gold;
+}
+
+.cardBody {
+  @apply flex flex-1 flex-col gap-4 p-6;
+}
+
+.cardTitle {
+  letter-spacing: 0.35em;
+  @apply font-cinzel text-sm uppercase text-lotr-gold;
+}
+
+.cardMeta {
+  letter-spacing: 0.3em;
+  @apply text-[11px] uppercase text-lotr-cream/65;
+}
+
+.metaList {
+  display: grid;
+  letter-spacing: 0.2em;
+  @apply grid-cols-2 gap-3 text-[10px] uppercase text-lotr-cream/60;
+}
+
+.metaLabel {
+  @apply text-lotr-gold;
+}
+
+.metaValue {
+  @apply block text-lotr-cream/80;
+}
+
+.cardDescription {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  letter-spacing: 0.25em;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: rgba(236, 229, 206, 0.6);
+  margin-top: 0;
+}
+
+.cardDescriptionVisible {
+  max-height: 320px;
+  opacity: 1;
+  margin-top: 0.75rem;
+  color: rgba(236, 229, 206, 0.75);
+}

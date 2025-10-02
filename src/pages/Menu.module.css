@@ -1,0 +1,32 @@
+/*
+   .\src\pages\Menu.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.wrapper {
+  @apply space-y-12;
+}
+
+.hero {
+  position: relative;
+  border-radius: 2.5rem;
+  @apply overflow-hidden border border-lotr-gold/30 bg-lotr-map bg-cover bg-center px-10 py-16 text-center text-lotr-cream shadow-2xl shadow-black/50 md:px-20;
+}
+
+.hero::before {
+  content: "";
+  @apply absolute inset-0 bg-lotr-ink/80 backdrop-blur;
+}
+
+.heroContent {
+  @apply relative z-10 flex flex-col items-center gap-4;
+}
+
+.heroTitle {
+  letter-spacing: 0.45em;
+  @apply font-cinzel text-xl uppercase text-lotr-gold md:text-2xl;
+}
+
+.heroText {
+  letter-spacing: 0.25em;
+  @apply max-w-2xl text-xs uppercase text-lotr-cream/75;
+}

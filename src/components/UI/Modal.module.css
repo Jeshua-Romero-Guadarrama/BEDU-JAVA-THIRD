@@ -1,0 +1,33 @@
+/*
+   .\src\components\UI\Modal.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.backdrop {
+  @apply fixed inset-0 bg-black/60 backdrop-blur-sm z-40;
+}
+
+.modal {
+  @apply fixed left-1/2 top-24 w-full max-w-3xl -translate-x-1/2 rounded-3xl border border-lotr-gold/40
+    bg-lotr-ink/95 p-8 shadow-2xl shadow-black/60 z-50;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    @apply top-16 p-6;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.modal {
+  animation: slide-down 300ms ease-out forwards;
+}

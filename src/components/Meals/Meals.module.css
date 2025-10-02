@@ -1,0 +1,14 @@
+/*
+   .\src\components\Meals\Meals.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.section {
+  border-radius: 2.5rem;
+  @apply relative -mt-10 border border-lotr-gold/20 bg-lotr-ink/85 p-10 shadow-2xl shadow-black/50 md:p-14;
+}
+
+@media (max-width: 768px) {
+  .section {
+    @apply p-8;
+  }
+}

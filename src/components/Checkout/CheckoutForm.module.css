@@ -1,0 +1,15 @@
+/*
+   .\src\components\Checkout\CheckoutForm.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.form {
+  @apply space-y-6;
+}
+
+.controls {
+  @apply grid gap-4 md:grid-cols-2;
+}
+
+.actions {
+  @apply flex flex-col-reverse gap-3 md:flex-row md:justify-end;
+}

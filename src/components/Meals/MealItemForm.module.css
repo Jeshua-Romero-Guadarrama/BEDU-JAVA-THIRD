@@ -1,0 +1,21 @@
+/*
+   .\src\components\Meals\MealItemForm.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.form {
+  @apply flex items-end gap-3;
+}
+
+.actions {
+  @apply flex items-center gap-3;
+}
+
+.error {
+  @apply text-xs text-red-200;
+}
+
+@media (max-width: 600px) {
+  .form {
+    @apply flex-col items-stretch;
+  }
+}

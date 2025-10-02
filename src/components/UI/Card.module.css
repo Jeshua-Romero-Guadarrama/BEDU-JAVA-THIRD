@@ -1,0 +1,14 @@
+/*
+   .\src\components\UI\Card.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.card {
+  @apply rounded-3xl border border-lotr-gold/25 bg-gradient-to-br from-lotr-ink/95 via-lotr-ink/80 to-lotr-forest/60
+    p-8 shadow-2xl shadow-black/40 backdrop-blur;
+}
+
+@media (max-width: 768px) {
+  .card {
+    @apply p-6;
+  }
+}

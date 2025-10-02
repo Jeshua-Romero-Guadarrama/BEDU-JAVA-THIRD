@@ -1,0 +1,33 @@
+/*
+   .\src\components\Layout\Footer.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.footer {
+  @apply mt-16 flex flex-col items-center gap-4 border-t border-lotr-gold/20 bg-lotr-ink/90 px-6 py-10 text-center text-sm text-lotr-cream;
+}
+
+.brand {
+  letter-spacing: 0.4em;
+  @apply font-cinzel text-xl uppercase text-lotr-gold;
+}
+
+.tagline {
+  letter-spacing: 0.2em;
+  @apply max-w-2xl text-xs uppercase text-lotr-cream/80;
+}
+
+.links {
+  letter-spacing: 0.3em;
+  @apply flex flex-wrap items-center justify-center gap-6 text-xs uppercase;
+}
+
+.links a {
+  @apply text-lotr-cream transition-colors duration-150 hover:text-lotr-gold;
+}
+
+.copy {
+  letter-spacing: 0.3em;
+  font-size: 11px;
+  @apply uppercase text-lotr-cream/60;
+}
+

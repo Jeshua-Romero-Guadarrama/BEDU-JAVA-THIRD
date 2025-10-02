@@ -1,0 +1,16 @@
+/*
+   .\src\components\Meals\AvailableMeals.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.meals {
+  @apply grid gap-8;
+}
+
+.list {
+  @apply grid gap-6 md:grid-cols-2 xl:grid-cols-3;
+}
+
+.fallback {
+  letter-spacing: 0.2em;
+  @apply text-center text-xs uppercase text-lotr-cream/70;
+}

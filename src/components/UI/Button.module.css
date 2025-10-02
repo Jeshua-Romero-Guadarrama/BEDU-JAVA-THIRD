@@ -1,0 +1,29 @@
+/*
+   .\src\components\UI\Button.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.button {
+  letter-spacing: 0.18em;
+  @apply inline-flex items-center justify-center gap-2 rounded-full font-semibold uppercase transition-transform transition-colors duration-200 ease-out px-6 py-3;
+}
+
+.primary {
+  @apply bg-lotr-gold text-lotr-ink shadow-lg shadow-lotr-gold/30 hover:bg-lotr-gold-light hover:-translate-y-0.5;
+}
+
+.ghost {
+  @apply border border-lotr-gold/60 text-lotr-cream hover:bg-lotr-gold/20 hover:-translate-y-0.5;
+}
+
+.small {
+  @apply px-4 py-2 text-xs;
+}
+
+.fullWidth {
+  @apply w-full;
+}
+
+.disabled,
+.button:disabled {
+  @apply opacity-60 cursor-not-allowed translate-y-0;
+}

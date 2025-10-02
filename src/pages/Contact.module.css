@@ -1,0 +1,106 @@
+/*
+   .\src\pages\Contact.module.css
+   Autor: Jeshua Romero Guadarrama (expansion de contacto)
+*/
+.page {
+  @apply space-y-12;
+}
+
+.hero {
+  position: relative;
+  border-radius: 2.5rem;
+  @apply overflow-hidden border border-lotr-gold/30 bg-lotr-map bg-cover bg-center px-10 py-16 text-center text-lotr-cream shadow-2xl shadow-black/50 md:px-20;
+}
+
+.hero::before {
+  content: "";
+  @apply absolute inset-0 bg-lotr-ink/80 backdrop-blur;
+}
+
+.heroContent {
+  @apply relative z-10 flex flex-col items-center gap-4;
+}
+
+.heroTitle {
+  letter-spacing: 0.45em;
+  @apply font-cinzel text-xl uppercase text-lotr-gold md:text-2xl;
+}
+
+.heroText {
+  letter-spacing: 0.25em;
+  @apply max-w-3xl text-xs uppercase text-lotr-cream/75;
+}
+
+.section {
+  @apply grid gap-8 md:grid-cols-[1fr_1.2fr];
+}
+
+.infoCard {
+  @apply h-full rounded-[2rem] border border-lotr-gold/30 bg-lotr-ink/85 p-10 text-left shadow-2xl shadow-black/40;
+}
+
+.infoTitle {
+  letter-spacing: 0.4em;
+  @apply font-cinzel text-lg uppercase text-lotr-gold;
+}
+
+.infoText {
+  letter-spacing: 0.25em;
+  @apply mt-4 text-xs uppercase text-lotr-cream/70;
+}
+
+.contactList {
+  @apply mt-6 space-y-4;
+}
+
+.contactLabel {
+  letter-spacing: 0.3em;
+  @apply block text-[11px] uppercase text-lotr-gold;
+}
+
+.contactValue {
+  letter-spacing: 0.2em;
+  @apply block text-xs uppercase text-lotr-cream/75;
+}
+
+.form {
+  @apply h-full rounded-[2rem] border border-lotr-gold/25 bg-lotr-ink/90 p-10 shadow-2xl shadow-black/40;
+}
+
+.formTitle {
+  letter-spacing: 0.35em;
+  @apply font-cinzel text-lg uppercase text-lotr-gold;
+}
+
+.fieldGroup {
+  @apply flex flex-col gap-2 pt-5;
+}
+
+.fieldGroup label {
+  letter-spacing: 0.25em;
+  @apply text-[11px] uppercase text-lotr-cream/80;
+}
+
+.fieldGroup input,
+.fieldGroup textarea {
+  @apply rounded-2xl border border-lotr-gold/30 bg-lotr-ink/70 px-4 py-3 text-sm text-lotr-cream outline-none transition-colors duration-150;
+}
+
+.fieldGroup input:focus,
+.fieldGroup textarea:focus {
+  @apply border-lotr-gold text-lotr-gold;
+}
+
+.errorText {
+  letter-spacing: 0.2em;
+  @apply text-[10px] uppercase text-red-300;
+}
+
+.actions {
+  @apply mt-6;
+}
+
+.successMessage {
+  letter-spacing: 0.25em;
+  @apply mt-6 text-[11px] uppercase text-lotr-gold;
+}

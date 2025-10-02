@@ -1,0 +1,40 @@
+/*
+   .\src\components\Cart\CartButton.module.css
+   Autor: Jeshua Romero Guadarrama
+*/
+.button {
+  letter-spacing: 0.2em;
+  @apply inline-flex items-center gap-3 rounded-full border border-lotr-gold/50 bg-lotr-ink/70 px-5 py-2 text-sm font-semibold
+    uppercase text-lotr-cream transition-transform transition-colors duration-200 ease-out shadow-lg
+    shadow-black/40 hover:-translate-y-0.5 hover:bg-lotr-gold/10;
+}
+
+.icon {
+  @apply text-lg text-lotr-gold;
+}
+
+.badge {
+  @apply inline-flex items-center justify-center rounded-full bg-lotr-gold px-3 py-1 text-xs font-semibold text-lotr-ink;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  30% {
+    transform: scale(1.15);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

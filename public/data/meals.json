@@ -1,0 +1,74 @@
+{
+  "meals": [
+    {
+      "id": "m1",
+      "name": "Lembas horneadas",
+      "description": "Pan elfico para resistir largas jornadas",
+      "price": 6.5,
+      "image": "/images/meals/m1.jpg"
+    },
+    {
+      "id": "m2",
+      "name": "Estofado de conejo con hierbas",
+      "description": "Receta de Sam servida junto al fuego",
+      "price": 12.99,
+      "image": "/images/meals/m2.jpg"
+    },
+    {
+      "id": "m3",
+      "name": "Cerveza de mantecona",
+      "description": "La favorita en la Posada del Poney Pisador",
+      "price": 5.5,
+      "image": "/images/meals/m3.jpg"
+    },
+    {
+      "id": "m4",
+      "name": "Guiso de Gondor",
+      "description": "Carne curada con verduras de la Ciudad Blanca",
+      "price": 14.0,
+      "image": "/images/meals/m4.jpg"
+    },
+    {
+      "id": "m5",
+      "name": "Pescado de los Gamos",
+      "description": "Ahumado a orillas del Brandivino",
+      "price": 11.25,
+      "image": "/images/meals/m5.jpg"
+    },
+    {
+      "id": "m6",
+      "name": "Pastel de bayas de Bree",
+      "description": "Postre casero relleno de frutas dulces",
+      "price": 7.0,
+      "image": "/images/meals/m6.jpg"
+    },
+    {
+      "id": "m7",
+      "name": "Cordero de Rohan",
+      "description": "Asado lentamente con especias del Folde Oeste",
+      "price": 18.5,
+      "image": "/images/meals/m7.jpg"
+    },
+    {
+      "id": "m8",
+      "name": "Sopa de champinones",
+      "description": "Hecha con hongos recolectados por los hobbits",
+      "price": 9.0,
+      "image": "/images/meals/m8.jpg"
+    },
+    {
+      "id": "m9",
+      "name": "Ensalada de Lothlorien",
+      "description": "Vegetales frescos con flores elficas",
+      "price": 8.25,
+      "image": "/images/meals/m9.jpg"
+    },
+    {
+      "id": "m10",
+      "name": "Hidromiel de Erebor",
+      "description": "Servida en jarra enana forjada a mano",
+      "price": 6.75,
+      "image": "/images/meals/m10.jpg"
+    }
+  ]
+}
